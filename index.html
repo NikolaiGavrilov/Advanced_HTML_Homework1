@@ -27,10 +27,8 @@
         <button class="header__button">My Account</button>
     </header>
 
-
-
     <section class="slider container">
-        <nav class="nav">
+        <nav class="nav navcenter">
             <a class="nav__element nav__link" href="#">Home</a>
             <a class="nav__element nav__link" href="#">Men</a>
             <a class="nav__element nav__link" href="#">Women</a>
@@ -40,41 +38,38 @@
         </nav>
         <div class="slider__flex center">
             <div class="slider__coloredLine"></div>
-            <div class="slider__inscriptionsFlex"><span class="slider__upperInscription">THE BRAND</span><br><span
+            <div class="slider__inscriptions"><span class="slider__upperInscription">THE BRAND</span><br><span
                     class="slider__inscriptionSmaller">OF LUXERIOUS <span
-                        class="slider__inscriptionSmallerColored">FASHION</span></span><br>
-
+                        class="slider__inscriptionSmallerColored">FASHION</span></span>
             </div>
         </div>
     </section>
 
     <section class="categories container center">
-        <div class="categories__category1Box">
+        <a href="#" class="categories__category1Box">
             <div class="categories__inscriptionsBG">
                 <span class="categories__upperInscription">hot deal</span>
                 <span class="categories__lowerInscription">for men</span>
-
             </div>
-        </div>
-
-        <div class="categories__category2Box">
+        </a>
+        <a href="#" class="categories__category2Box">
             <div class="categories__inscriptionsBG">
                 <span class="categories__upperInscription">30% offer</span>
                 <span class="categories__lowerInscription">women</span>
             </div>
-        </div>
-        <div class="categories__category3Box">
+        </a>
+        <a href="#" class="categories__category3Box">
             <div class="categories__inscriptionsBG">
                 <span class="categories__upperInscription">LUXIROUS & trendy</span>
                 <span class="categories__lowerInscription">ACCESORIES</span>
             </div>
-        </div>
-        <div class="categories__category4Box">
+        </a>
+        <a href="#" class="categories__category4Box">
             <div class="categories__inscriptionsBG">
                 <span class="categories__upperInscription">new arrivals</span>
                 <span class="categories__lowerInscription">FOR kids</span>
             </div>
-        </div>
+        </a>
     </section>
 
     <section class="products container center">
@@ -82,42 +77,42 @@
         <p class="products__description">Shop for items based on what we featured in this week</p>
         <section class="products__flex">
             <article class="products__item">
-                <a href="#"><img src="img/product1.jpg" alt="item1"></a>
+                <a class="products__itemImage" href="#"><img src="img/product1.jpg" alt="item1"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product2.jpg" alt="item2"></a>
+                <a class="products__itemImage" href="#"><img src="img/product2.jpg" alt="item2"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product3.jpg" alt="item3"></a>
+                <a class="products__itemImage" href="#"><img src="img/product3.jpg" alt="item3"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product4.jpg" alt="item4"></a>
+                <a class="products__itemImage" href="#"><img src="img/product4.jpg" alt="item4"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product5.jpg" alt="item5"></a>
+                <a class="products__itemImage" href="#"><img src="img/product5.jpg" alt="item5"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product6.jpg" alt="item6"></a>
+                <a class="products__itemImage" href="#"><img src="img/product6.jpg" alt="item6"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product7.jpg" alt="item7"></a>
+                <a class="products__itemImage" href="#"><img src="img/product7.jpg" alt="item7"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
             <article class="products__item">
-                <a href="#"><img src="img/product8.jpg" alt="item8"></a>
+                <a class="products__itemImage" href="#"><img src="img/product8.jpg" alt="item8"></a>
                 <h3 class="products__itemName">Mango People T-shirt</h3>
                 <span class="products__itemPrice">$52.00</span>
             </article>
@@ -127,10 +122,11 @@
 
     <section class="feature container center">
         <div class="feature__gridLeft">
-            <h1 class="feature__title">30% <span class="feature__titleColored">OFFER</span><br><span
-                    class="feature__titleSmaller">FOR WOMEN</span></h1>
+            <div class="feature__flex">
+                <h1 class="feature__title">30% <span class="feature__titleColored">OFFER</span></h1>
+                <h2 class="feature__titleLower">FOR WOMEN</h2>
+            </div>
         </div>
-
         <div class="feature__gridRight">
             <article class="feature__article">
                 <img class="feature__logo" src="img/featureIcon1.png" alt="feature1">
@@ -186,7 +182,7 @@
     <footer class="footer container center">
         <div class="footer__brand">
             <div class="footer__column">
-                <div><a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
+                <div class="footer__logoAndTitle"><a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
                     <span class="header__title">BRAN<span class="header__titleColored">D</span></span>
                 </div>
                 <p class="footer__paragraph">Objectively transition extensive data rather than cross functional<br>
@@ -252,7 +248,6 @@
             </a>
         </div>
     </div>
-
 
 </body>
 
