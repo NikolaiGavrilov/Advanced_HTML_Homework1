@@ -12,13 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header container center">
         <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
         <span class="header__title">BRAN<span class="header__titleColored">D</span></span>
-        <button class="header__browseButton header__browseButtonText">Browse
+        <button class="header__browseButton header__browseButtonText">Browse <i class="fa fa-caret-down"></i>
             <div class="browseBox">
                 <div class="mega-item">
                     <h3 class="mega-title">WOMEN</h3>
@@ -73,17 +74,17 @@
                             <span class="cartBox__totalSum">$500.00</span>
                         </div>
                         <div class="cartBox__buttonsFlex">
-                            <a href="#"><button class="cartBox__button">Checkout</button></a>
+                            <a href="checkout.html"><button class="cartBox__button">Checkout</button></a>
                             <a href="shopping_cart.html"><button class="cartBox__button">Go to cart</button></a>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <button class="header__button">My Account</button>
+        <button class="header__button">My Account <i class="fa fa-caret-down"></i></button>
     </header>
     <nav class="nav navcenter">
-        <li class="menu-list"><a class="nav__element nav__link" href="#">Home</a></li>
+        <li class="menu-list"><a class="nav__element nav__link" href="index.html">Home</a></li>
         <li class="menu-list"><a class="nav__element nav__link" href="#">Men</a>
             <div class="mega-box">
                 <div class="mega-item">
@@ -356,11 +357,185 @@
                 </div>
             </div>
 
-            <button class="sing-page__info__button"><img class="sing-page__info__button_img" src="img/addCart.png"
-                    alt="">
-                Add to Cart</button>
+            <button class="sing-page__info__button">
+                <img class="sing-page__info__button_img" src="img/addCart.png" alt="">
+                <span class="sing-page__info__button_add-inscription">Add to Cart</span></button>
         </div>
+
+        <div class="sing-page__products_box container center">
+            <div class="sing-page__items_title">you may like also</div>
+            <div class="sing-page__items_box">
+                <div class="products__item">
+                    <a class="products__item__link" href="#">
+                        <img class="products__item__image" src="img/singlePageProduct1.png" alt="товар1">
+                        <div class="products__item__textbox">
+                            <h3 class="products__item__name">Mango People T-shirt</h3>
+                            <span class="products__item__price">$52.00</span>
+                        </div>
+                    </a>
+                    <div class="products__add__box">
+                        <a class="products__add__flex" href="#">
+                            <img class="products__add__image" src="img/addCart.png" alt="корзина">
+                            <p class="products__add__text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <a class="products__item__link" href="#">
+                        <img class="products__item__image" src="img/singlePageProduct2.png" alt="товар1">
+                        <div class="products__item__textbox">
+                            <h3 class="products__item__name">Mango People T-shirt</h3>
+                            <span class="products__item__price">$52.00</span>
+                        </div>
+                    </a>
+                    <div class="products__add__box">
+                        <a class="products__add__flex" href="#">
+                            <img class="products__add__image" src="img/addCart.png" alt="корзина">
+                            <p class="products__add__text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <a class="products__item__link" href="#">
+                        <img class="products__item__image" src="img/singlePageProduct3.png" alt="товар1">
+                        <div class="products__item__textbox">
+                            <h3 class="products__item__name">Mango People T-shirt</h3>
+                            <span class="products__item__price">$52.00</span>
+                        </div>
+                    </a>
+                    <div class="products__add__box">
+                        <a class="products__add__flex" href="#">
+                            <img class="products__add__image" src="img/addCart.png" alt="корзина">
+                            <p class="products__add__text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <a class="products__item__link" href="#">
+                        <img class="products__item__image" src="img/singlePageProduct4.png" alt="товар1">
+                        <div class="products__item__textbox">
+                            <h3 class="products__item__name">Mango People T-shirt</h3>
+                            <span class="products__item__price">$52.00</span>
+                        </div>
+                    </a>
+                    <div class="products__add__box">
+                        <a class="products__add__flex" href="#">
+                            <img class="products__add__image" src="img/addCart.png" alt="корзина">
+                            <p class="products__add__text">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="subscribe__sing-page container">
+            <section class="subscribe">
+                <div class="subscribe__background">
+                    <div class="subscribe__left">
+                        <img class="subscribe__portrait" src="img/subscribePortrait.png" alt="woman">
+                        <div class="subscribe__Info">
+                            <p class="subscribe__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<br>
+                                a pulvinar purus condimentum a. Aliquam condimentum<br> mattis neque sed pretium”</p>
+                            <span class="subscribe__name">Bin Burhan<br></span>
+                            <span class="subscribe__location">Dhaka, Bd</span>
+                            <div class="subscribe__rectangle-flex">
+                                <div class="subscribe__rectangle"></div>
+                                <div class="subscribe__rectangle_colored"></div>
+                                <div class="subscribe__rectangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscrive__right">
+                        <h2 class="subscribe__title">Subscribe</h2>
+                        <span class="subscribe__smallerTitle">FOR OUR NEWLETTER AND
+                            PROMOTION <br></span>
+                        <form class="subscribe__emailForm" action="#">
+                            <input class="subscribe__field" type="email" placeholder="Enter Your Email">
+                            <button class="subscribe__button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer container center">
+                <div class="footer__brand">
+                    <div class="footer__column">
+                        <div class="footer__logoAndTitle"><a href="index.html"><img src="img/header_logo.png"
+                                    alt="logo"></a>
+                            <span class="header__title">BRAN<span class="header__titleColored">D</span></span>
+                        </div>
+                        <p class="footer__paragraph">Objectively transition extensive data rather than cross
+                            functional<br>
+                            solutions. Monotonectally syndicate multidisciplinary materials<br> before go forward
+                            benefits.
+                            Intrinsicly syndicate an expanded array<br> of processes and cross-unit partnerships.</p>
+                        <p class="footer__paragraph">Efficiently plagiarize 24/365 action items and focused
+                            infomediaries.<br>
+                            Distinctively seize superior initiatives for wireless technologies.<br> Dynamically
+                            optimize.
+                        </p>
+                    </div>
+                    <div class="footer__column">
+                        <span class="footer__coloredSection">COMPANY</span>
+                        <a href="index.html" class="footer__uncoloredSection footer__link">Home</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Shop</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">About</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">How It Works</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Contact</a>
+                    </div>
+                    <div class="footer__column">
+                        <span class="footer__coloredSection">INFORMATION</span>
+                        <a href="#" class="footer__uncoloredSection footer__link">Terms & Conditions</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">How to Buy</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">How to Sell</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Promotion</a>
+                    </div>
+                    <div class="footer__column">
+                        <span class="footer__coloredSection">SHOP CATEGORY</span>
+                        <a href="#" class="footer__uncoloredSection footer__link">Men</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Women</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Children</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Apparel</a>
+                        <a href="#" class="footer__uncoloredSection footer__link">Browse All</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="footer__copyright container center">
+                <span class="footer__copyright__description">© 2017 Brand All Rights Reserved.</span>
+                <div class="footer__socialMedia">
+                    <a href="#">
+                        <div class="footer__socialMediaBox">
+                            <img src="img/facebook.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socialMediaBox">
+                            <img src="img/twitter.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socialMediaBox">
+                            <img src="img/linkedin.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socialMediaBox">
+                            <img src="img/pinterest.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socialMediaBox">
+                            <img src="img/googleplus.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </section>
+
+
 </body>
 
 </html>

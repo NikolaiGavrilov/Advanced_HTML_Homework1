@@ -147,7 +147,6 @@ a {
 
         &:hover {
             color: $textColorDifferent;
-            ;
             border: 1px solid $textColorDifferent;
         }
     }
@@ -623,6 +622,11 @@ a {
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
         border: 1px solid transparent;
+
+        &:hover .fa-long-arrow-right {
+
+            filter: invert(57%) sepia(19%) saturate(2664%) hue-rotate(311deg) brightness(102%) contrast(89%);
+        }
     }
 
     &__button:hover {
@@ -726,6 +730,11 @@ a {
 .subscribe {
     padding-top: 100px;
 
+    &__sing-page {
+        top: 2120px;
+        position: absolute;
+    }
+
     &__background {
         width: $siteWidth;
         height: 438px;
@@ -769,6 +778,27 @@ a {
         letter-spacing: 0.025em;
         color: $textColorDifferent;
     }
+
+
+    &__rectangle-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        padding-top: 31px;
+    }
+
+    &__rectangle {
+        height: 4px;
+        width: 38px;
+        background-color: #d6d6d6;
+
+        &_colored {
+            height: 4px;
+            width: 38px;
+            background-color: $textColorDifferent;
+        }
+    }
+
 
     &__location {
         font-size: 12px;
@@ -1424,6 +1454,10 @@ a {
         width: 47px;
         height: 47px;
         background-color: rgba(42, 42, 42, 0.14);
+
+        &:hover {
+            filter: invert(57%) sepia(19%) saturate(2664%) hue-rotate(311deg) brightness(102%) contrast(89%);
+        }
     }
 
     &__info {
@@ -1565,6 +1599,15 @@ a {
             color: #ffffff;
             background-color: #ef5b70;
             border: 1px solid #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            &_add-inscription {
+                display: block;
+            }
 
             &:hover {
                 color: #ef5b70;
@@ -1577,4 +1620,207 @@ a {
             }
         }
     }
+
+    &__items_title {
+        padding-top: 119px;
+        padding-bottom: 72px;
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #4d4d4d;
+    }
+
+    &__items_box {
+        padding-bottom: 73px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__products_box {
+        position: relative;
+        top: 805px;
+    }
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+
+    &__ship-adr__flex {
+        padding-top: 39px;
+        padding-left: 35px;
+        display: flex;
+        flex-direction: row;
+        gap: 291px;
+    }
+
+    &__flexline {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border-bottom: 1px solid #e8e8e8;
+
+        &:hover {
+            background-color: #fbfbfb;
+        }
+    }
+
+    &__summary {
+        list-style-type: none;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+
+
+    }
+
+    &__text {
+        padding-top: 13px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__fa-instructions {
+        margin-top: 15px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #b3b2b2;
+    }
+
+    &__instructions {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #b3b2b2;
+    }
+
+    &__requiredText {
+
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ff0d0d;
+    }
+
+    &__input {
+        margin-top: 16px;
+        margin-bottom: 22px;
+        width: 390px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+    }
+
+    &__radio-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__radio {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+    }
+
+    &__radio-text {
+        font-family: Lato;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__button {
+        margin-top: 32px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        width: 180px;
+        height: 50px;
+
+        &:hover {
+            color: $textColorDifferent;
+            border: 1px solid $textColorDifferent;
+        }
+    }
+
+    &__forgotlink {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #222222;
+        padding-bottom: 14px;
+    }
+
+    &__login-forgot {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: self-end;
+        gap: 32px;
+    }
+}
+
+.fa-long-arrow-right {
+    font-family: 'Font Awesome';
+    font-size: 15px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+}
+
+.fa-angle-double-right {
+    font-family: 'Font Awesome';
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #838383;
+}
+
+.fa-angle-double-right {
+    font-family: 'Font Awesome';
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+}
+
+.fa-search {
+    font-family: 'Font Awesome';
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
 }

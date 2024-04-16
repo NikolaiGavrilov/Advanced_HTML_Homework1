@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAND Shopping Cart</title>
+    <title>BRAND Checkout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <header class="header container center">
         <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
         <span class="header__title">BRAN<span class="header__titleColored">D</span></span>
@@ -315,100 +316,82 @@
         </div>
     </section>
 
-    <section class="sh__cart__main container">
-        <div class="sh__cart__table center">
-            <div class="sh__cart__table__collumnNames">
-                <h2 class="sh__cart__table__collumnName sh__cart__table__collumnName__first">Product Details</h2>
-                <h2 class="sh__cart__table__collumnName">Unite Price</h2>
-                <h2 class="sh__cart__table__collumnName">Quantity</h2>
-                <h2 class="sh__cart__table__collumnName">Shipping</h2>
-                <h2 class="sh__cart__table__collumnName">Subtotal</h2>
-                <h2 class="sh__cart__table__collumnName">Action</h2>
-            </div>
-            <div class="sh__cart__table__productLine">
-                <div class="sh__cart__table__productDetails">
-                    <a class="sh__cart__table__productImg" href="#"><img src="img/shoppingCartProduct1.png" alt=""></a>
-                    <div class="sh__cart__table__productText">
-                        <h3 class="sh__cart__table__productName">Mango People T-shirt</h3>
-                        <span class="sh__cart__table__productColorSize">Color: <span
-                                class="sh__cart__table__productColorSize__data">Red</span><br>
-                            Size: <span class="sh__cart__table__productColorSize__data">Xll</span></span>
+    <section class="checkout container center">
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">01. Shipping Adress</summary>
+                <div class="checkout__ship-adr__flex">
+                    <div class="checkout__ship-adr__flex-left">
+                        <p class="checkout__text">Check as a guest or register</p>
+                        <p class="checkout__instructions">Register with us for future convenience</p>
+                        <div class="checkout__radio-flex">
+                            <label class="checkout__radio" for=""><input type="radio" name="radAnswer" id="1"><span
+                                    class="checkour__radio-text">CHECK AS
+                                    A GUEST</span></label>
+                            <label class="checkout__radio" for=""><input type="radio" name="radAnswer"
+                                    id="1"><span>REGISTER</span></label>
+                        </div>
+                        <p class="checkout__text">register and save time!</p>
+                        <p class="checkout__instructions">Register with us for future convenience</p>
+
+                        <p class="checkout__fa-instructions"><i class="fa fa-angle-double-right"></i> Fast and easy
+                            checkout
+                        </p>
+                        <p class="checkout__fa-instructions"><i class="fa fa-angle-double-right"></i> Easy access to
+                            your
+                            order history and status</p>
+
+                        <button class="checkout__button">Continue</button>
+                    </div>
+
+                    <div class="checkout__ship-adr__flex-right">
+                        <p class="checkout__text">Already registed?</p>
+                        <p class="checkout__instructions">Please log in below</p>
+                        <p class="checkout__text">EMAIL ADDRESS<span class="checkout__requiredText">*</span></p>
+                        <input class="checkout__input" type="email" value="">
+                        <p class="checkout__text">PASSWORD<span class="checkout__requiredText">*</span></p>
+                        <input class="checkout__input" type="password" value="">
+                        <p class="checkout__requiredText">* Required fields</p>
+                        <div class="checkout__login-forgot">
+                            <button class="checkout__button">log in</button>
+                            <a href="#">
+                                <p class="checkout__forgotlink">Forgot Password?</p>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-                <span class="sh__cart__table__productPrice">$150</span>
-                <input class="sh__cart__table__inputField" type="text" name="" id="" value="2">
-                <span class="sh__cart__table__productShipping">FREE</span>
-                <span class="sh__cart__table__productSubtotal">$300</span>
-                <a class="sh__cart__table__productAction" href="#"><img src="img/remove_icon.png"
-                        alt="крестик-удалить"></a>
-            </div>
-            <div class="sh__cart__table__productLine">
-                <div class="sh__cart__table__productDetails">
-                    <a class="sh__cart__table__productImg" href="#"><img src="img/shoppingCartProduct2.png" alt=""></a>
-                    <div class="sh__cart__table__productText">
-                        <h3 class="sh__cart__table__productName">Mango People T-shirt</h3>
-                        <span class="sh__cart__table__productColorSize">Color: <span
-                                class="sh__cart__table__productColorSize__data">Red</span><br>
-                            Size: <span class="sh__cart__table__productColorSize__data">Xll</span></span>
-                    </div>
-                </div>
-                <span class="sh__cart__table__productPrice">$150</span>
-                <input class="sh__cart__table__inputField" type="text" name="" id="" value="2">
-                <span class="sh__cart__table__productShipping">FREE</span>
-                <span class="sh__cart__table__productSubtotal">$300</span>
-                <a class="sh__cart__table__productAction" href="#"><img src="img/remove_icon.png"
-                        alt="крестик-удалить"></a>
-            </div>
-            <div class="sh__cart__table__productLine">
-                <div class="sh__cart__table__productDetails">
-                    <a class="sh__cart__table__productImg" href="#"><img src="img/shoppingCartProduct3.png" alt=""></a>
-                    <div class="sh__cart__table__productText">
-                        <h3 class="sh__cart__table__productName">Mango People T-shirt</h3>
-                        <span class="sh__cart__table__productColorSize">Color: <span
-                                class="sh__cart__table__productColorSize__data">Red</span><br>
-                            Size: <span class="sh__cart__table__productColorSize__data">Xll</span></span>
-                    </div>
-                </div>
-                <span class="sh__cart__table__productPrice">$150</span>
-                <input class="sh__cart__table__inputField" type="text" value="2">
-                <span class="sh__cart__table__productShipping">FREE</span>
-                <span class="sh__cart__table__productSubtotal">$300</span>
-                <a class="sh__cart__table__productAction" href="#"><img src="img/remove_icon.png"
-                        alt="крестик-удалить"></a>
-            </div>
-            <div class="sh__cart__table__buttons">
-                <button class="sh__cart__table__button">cLEAR SHOPPING CART</button>
-                <button class="sh__cart__table__button">cONTINUE sHOPPING</button>
-            </div>
+            </details>
         </div>
-        <div class="sh__cart__orderForm center">
-            <div class="sh__cart__orderForm__column">
-                <h2 class="sh__cart__orderForm__title">
-                    Shipping Address</h2>
-                <select class="sh__cart__orderForm__input_select" name="" id="">
-                    <option selected="selected">Bangladesh</option>
-                </select>
-                <input class="sh__cart__orderForm__input" type="text" value="State">
-                <input class="sh__cart__orderForm__input" type="int" value="Postcode / Zip">
-                <button class="sh__cart__orderForm__button">Get a Quote</button>
-            </div>
-            <div class="sh__cart__orderForm__column">
-                <h2 class="sh__cart__orderForm__title">
-                    Coupon Discount</h2>
-                <span class="sh__cart__orderForm__instruction">Enter your coupon code if you have one</span>
-                <input class="sh__cart__orderForm__input" type="text" value="State">
-                <button class="sh__cart__orderForm__button">Apply coupon</button>
-            </div>
-            <div class="sh__cart__orderForm__column_last">
-                <span class="sh__cart__orderForm__price sh__cart__orderForm__price_little">Sub
-                    total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900</span>
-                <span class="sh__cart__orderForm__price sh__cart__orderForm__price_big">GRAND TOTAL
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class="sh__cart__orderForm__price_colored">$900</span>
-                    <a href="checkout.html"><button
-                            class="sh__cart__orderForm__button sh__cart__orderForm__button_big">Proceed to
-                            checkout</button></a>
-            </div>
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">02. BILLING INFORMATION</summary>
+                <p class="checkout__instructions">Information to be updated in this section...</p>
+            </details>
+        </div>
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">03. Shipping information</summary>
+                <p class="checkout__instructions">Information to be updated in this section...</p>
+            </details>
+        </div>
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">04. Shipping Method</summary>
+                <p class="checkout__instructions">Information to be updated in this section...</p>
+            </details>
+        </div>
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">05. Payment method</summary>
+                <p class="checkout__instructions">Information to be updated in this section...</p>
+            </details>
+        </div>
+        <div class="checkout__flexline">
+            <details class="checkout__details">
+                <summary class="checkout__summary">06. Order review</summary>
+                <p class="checkout__instructions">Information to be updated in this section...</p>
+            </details>
         </div>
     </section>
 
@@ -449,10 +432,8 @@
                 <p class="footer__paragraph">Objectively transition extensive data rather than cross functional<br>
                     solutions. Monotonectally syndicate multidisciplinary materials<br> before go forward benefits.
                     Intrinsicly syndicate an expanded array<br> of processes and cross-unit partnerships.</p>
-                <p class="footer__paragraph">Efficiently plagiarize 24/365 action items and focused
-                    infomediaries.<br>
-                    Distinctively seize superior initiatives for wireless technologies.<br> Dynamically optimize.
-                </p>
+                <p class="footer__paragraph">Efficiently plagiarize 24/365 action items and focused infomediaries.<br>
+                    Distinctively seize superior initiatives for wireless technologies.<br> Dynamically optimize.</p>
             </div>
             <div class="footer__column">
                 <span class="footer__coloredSection">COMPANY</span>
@@ -511,10 +492,6 @@
             </a>
         </div>
     </div>
-
-</body>
-
-</html>
 
 </body>
 
