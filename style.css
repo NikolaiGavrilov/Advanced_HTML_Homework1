@@ -353,6 +353,7 @@ a {
     grid-template-columns: 560px 560px;
     grid-template-rows: 261px 261px 261px;
     gap: 20px;
+    position: relative;
   }
   .categories__inscriptionsBG {
     margin-top: 26px;
@@ -432,6 +433,7 @@ a {
     transition: all 0.5s ease;
   }
   .categories__category4Box {
+    position: inherit;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;

@@ -494,6 +494,7 @@ a {
         -ms-grid-rows: 261px 20px 261px 20px 261px;
         grid-template-rows: 261px 261px 261px;
         gap: 20px;
+        position: relative;
 
         &__inscriptionsBG {
             margin-top: 26px;
@@ -587,6 +588,7 @@ a {
         }
 
         &__category4Box {
+            position: inherit;
             -ms-grid-column: 2;
             -ms-grid-column-span: 1;
             grid-column: 2/3;
