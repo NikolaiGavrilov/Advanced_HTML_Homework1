@@ -261,6 +261,9 @@ a {
   transition: all 0.5s ease;
   border: 1px solid #ffffff;
 }
+.header:hover .fa-caret-down__my-acc-header {
+  color: #f16d7f;
+}
 .header__button:hover {
   background-color: #ffffff;
   color: #f16d7f;
@@ -628,9 +631,20 @@ a {
   letter-spacing: 0.025em;
   color: #fbfbfb;
 }
+.feature__articleDescription__prod-cat-pos {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+}
 
 .subscribe {
   padding-top: 100px;
+}
+.subscribe__prod-catalogue-pos {
+  padding-top: 0;
 }
 .subscribe__sing-page {
   top: 2120px;
@@ -1601,6 +1615,9 @@ a {
 .fa-caret-down {
   color: #838383;
 }
+.fa-caret-down__my-acc-header {
+  color: #ffffff;
+}
 
 .prod-catalogue {
   padding-top: 59px;
@@ -1873,6 +1890,7 @@ a {
   background-color: #222224;
   display: flex;
   flex-direction: row;
+  gap: 81px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -1885,8 +1903,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 .prod-catalogue__feature-article-text {
+  width: 102%;
   display: flex;
   flex-direction: column;
   justify-content: center;

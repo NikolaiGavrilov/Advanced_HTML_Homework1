@@ -302,6 +302,10 @@ a {
         border: 1px solid $backgroundColor;
     }
 
+    &:hover .fa-caret-down__my-acc-header {
+        color: #f16d7f;
+    }
+
     &__button:hover {
         background-color: $backgroundColor;
         color: $textColorDifferent;
@@ -700,6 +704,7 @@ a {
         justify-content: center;
         align-items: flex-start;
         flex-wrap: nowrap;
+
     }
 
     &__articleText {
@@ -724,11 +729,24 @@ a {
         font-weight: 300;
         letter-spacing: 0.025em;
         color: $featureTextColor;
+
+        &__prod-cat-pos {
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            letter-spacing: 0.025em;
+            color: #fbfbfb;
+        }
     }
 }
 
 .subscribe {
     padding-top: 100px;
+
+    &__prod-catalogue-pos {
+        padding-top: 0;
+    }
 
     &__sing-page {
         top: 2120px;
@@ -1828,6 +1846,9 @@ a {
 .fa-caret-down {
     color: #838383;
 
+    &__my-acc-header {
+        color: #ffffff;
+    }
 
 }
 
@@ -2146,17 +2167,20 @@ a {
             background-color: #ffffff;
             border: 1px solid #ef5b70;
         }
+
     }
 
     &__sales {
         background-color: #222224;
         display: flex;
         flex-direction: row;
+        gap: 81px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding-top: 89px;
         padding-bottom: 114px;
+
     }
 
     &__feature-article {
@@ -2165,8 +2189,11 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 0;
+        padding-right: 0;
 
         &-text {
+            width: 102%;
             display: flex;
             flex-direction: column;
             justify-content: center;
